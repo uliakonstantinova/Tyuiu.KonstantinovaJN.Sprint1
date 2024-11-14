@@ -11,14 +11,13 @@ namespace Tyuiu.KonstantinovaJN.Sprint1.Task2.V17.Lib
     }
 
     namespace MinutesToHoursLibrary
-       {
-            public static class TimeConverter
+    {
+        public static class TimeConverter
+        {
+            public static int MinutesToHours(int minutes)
             {
-                public static int MinutesToHours(int minutes)
-                {
-                    return minutes / 60;
-                }
+                return minutes / 60;
             }
-       }
+        }
+    }
 }
-

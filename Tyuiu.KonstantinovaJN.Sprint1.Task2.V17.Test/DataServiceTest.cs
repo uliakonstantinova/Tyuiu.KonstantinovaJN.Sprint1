@@ -25,6 +25,3 @@ namespace Tyuiu.KonstantinovaJN.Sprint1.Task2.V17.Test
         }
     }
 }
-
-        
-
