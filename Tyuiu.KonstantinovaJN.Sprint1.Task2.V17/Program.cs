@@ -1,5 +1,4 @@
 ﻿using Tyuiu.KonstantinovaJN.Sprint1.Task2.V17.Lib;
-using Tyuiu.KonstantinovaJN.Sprint1.Task2.V17.Lib.MinutesToHoursLibrary;
 
 namespace Tyuiu.KonstantinovaJN.Sprint1.Task1.V17
 {
@@ -26,20 +25,16 @@ namespace Tyuiu.KonstantinovaJN.Sprint1.Task1.V17
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            Console.Write("Введите количество минут: ");
-            string input = Console.ReadLine();
+            int x;
+            Console.Write("Время в минутах:");
+            x = Convert.ToInt32(Console.ReadLine());
 
-            if (int.TryParse(input, out int minutes))
-            {
-                int hours = TimeConverter.MinutesToHours(minutes);
-                Console.WriteLine($"Время в часах: {hours}");
-            }
-            else
-            {
-                Console.WriteLine("Некорректный ввод. Введите целое число.");
-            }
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* Результат:                                                              *");
+            Console.WriteLine("***************************************************************************");
 
-            Console.ReadKey();
+            Console.WriteLine("Время в часах:" + ds.ConvertMinutesToHours(x));
+            Console.ReadLine();
         }
     }
 }
