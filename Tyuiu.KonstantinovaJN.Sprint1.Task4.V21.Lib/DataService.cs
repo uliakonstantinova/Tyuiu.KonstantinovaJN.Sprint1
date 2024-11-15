@@ -9,7 +9,8 @@ namespace Tyuiu.KonstantinovaJN.Sprint1.Task4.V21.Lib
             double w = Math.Pow(1 + x, 2);
             double v = w - y;
             double r = v / (x + y);
-            return r;
+
+            return Math.Round(r, 3);
         }
     }
 }
